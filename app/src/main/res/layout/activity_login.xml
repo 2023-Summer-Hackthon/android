@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <android.widget.Button
+        android:id="@+id/signupBT"
+        android:layout_width="286dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/border_button2"
+        android:text="SIGN UP | 회원가입"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginBT"/>
+
+    <android.widget.Button
+        android:id="@+id/loginBT"
+        android:layout_width="286dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/border_button"
+        android:text="LOGIN | 로그인"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/signupBT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/explanation"/>
+
+    <TextView
+        android:id="@+id/explanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="499dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="13dp"
+        android:text="다문화 정보공유 소통 플랫폼, 웰컴"
+        app:layout_constraintBottom_toTopOf="@+id/loginBT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/yang"
+        app:layout_constraintBottom_toTopOf="@+id/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginEnd="184dp"
+        android:layout_marginBottom="23dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/explanation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.63" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
